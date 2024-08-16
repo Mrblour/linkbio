@@ -1,0 +1,112 @@
+/* Estilos generales */
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+/* Fondo */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #272222, #130f20, #230627, #230404);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 20s ease infinite;
+    z-index: -1;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 25% 25%; }
+    50% { background-position: 50% 50%; }
+    75% { background-position: 75% 75%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Estilos del contenido principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    padding-top: 150px; 
+    padding-bottom: 50px; 
+}
+
+/* Estilo para la hora */
+.time {
+    font-family: Arial, sans-serif;
+    font-size: 6rem; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+/* Estilo para la fecha y día */
+.date-info {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem; 
+    margin: 15px 0; 
+}
+
+/* Estilo para los botones */
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; 
+    align-items: center; 
+}
+
+.buttons button a {
+    color: white; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center; 
+}
+
+.buttons button i {
+    margin-right: 8px; 
+    font-size: 1.2rem; 
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo para el anuncio */
+.announcement {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 15px 25px;
+    max-width: 400px;
+    margin: 20px auto 0;
+    font-size: 0.9rem;
+}
+
+.announcement p {
+    display: flex;
+    align-items: center;
+}
+
+.announcement i {
+    margin-right: 8px;
+    font-size: 1.2rem; 
+}

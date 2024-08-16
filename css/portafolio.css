@@ -1,0 +1,271 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: rgb(20, 21, 33);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(320deg, #35223e, #181f27, #1b1827, #0d1723, #0d2314);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 20s ease infinite;
+    z-index: -1;
+}
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 25% 25%; }
+    50% { background-position: 50% 50%; }
+    75% { background-position: 75% 75%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons a.button {
+    color: white;
+    background-color: #ffffff17;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.header-buttons a.button.github {
+    background-color: #0084ff13;
+}
+
+/* Bienvenida */
+.welcome-section {
+    text-align: center;
+    padding: 150px 100px;
+    color: white;
+    position: relative;
+}
+
+.welcome-section h2 {
+    font-size: 46px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.welcome-section .highlight {
+    background: linear-gradient(35deg, #7ce5ff, #d0efff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+}
+
+/* Sección de Biografía */
+.biography-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.biography-box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.biography-box h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.biography-box p {
+    font-size: 15px;
+    color: #e0e0e0b8;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.biography-image {
+    width: 45%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.user-feedback {
+    padding: 50px 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.user-feedback h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.feedback-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    background-color: #ffffff1d;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.feedback p {
+    font-size: 16px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.feedback-link {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.feedback-link i {
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+.feedback-link:hover {
+    color: #dddddd;
+}
+
+/* Sección de Lenguajes y Tecnologías */
+.languages-technologies {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.tech-container {
+    text-align: center;
+}
+
+.tech-label {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.language {
+    background-color: #ffffff17;
+    border-radius: 50%;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.language i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.language:hover {
+    background-color: #555555;
+}
+
+/* Sección de Características Adicionales */
+.additional-section {
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+}
+
+.additional-content {
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    margin-right: 20px;
+}
+
+.additional-content h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.additional-content p {
+    font-size: 15px;
+    color: #e0e0e0b8;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.additional-image {
+    width: 40%;
+    border-radius: 8px;
+}

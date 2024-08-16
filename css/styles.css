@@ -1,0 +1,120 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+/* Fondo animado tipo lámpara de lava con colores oscuros */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1b1f3a; 
+    background: radial-gradient(circle at 20% 30%, #54385e, transparent 30%),
+                radial-gradient(circle at 80% 70%, #4f5931, transparent 30%),
+                radial-gradient(circle at 50% 50%, #346057, transparent 50%),
+                radial-gradient(circle at 10% 80%, #543661, transparent 40%),
+                radial-gradient(circle at 90% 20%, #405f75, transparent 40%),
+                radial-gradient(circle at 30% 50%, #41486f, transparent 35%),
+                radial-gradient(circle at 60% 60%, #5e373e, transparent 40%),
+                radial-gradient(circle at 70% 40%, #5a334a, transparent 45%);
+    background-size: 300% 300%;
+    animation: lavaLamp 30s ease infinite;
+    z-index: -1;
+}
+
+@keyframes lavaLamp {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Estilos del contenido principal */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding-top: 150px;
+    overflow: hidden; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons a {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    font-family: Arial, sans-serif; 
+}
+
+.buttons a i {
+    margin-right: 8px; 
+    font-size: 1.2rem; 
+}
+
+.buttons a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.announcement {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 15px 25px;
+    max-width: 400px;
+    margin: 20px auto 0;
+    font-size: 0.9rem;
+}
+
+.announcement p {
+    display: flex;
+    align-items: center;
+}
+
+.announcement i {
+    margin-right: 8px;
+    font-size: 1.2rem; 
+}
